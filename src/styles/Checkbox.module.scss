@@ -1,0 +1,10 @@
+.checkbox_container{
+    font-size: 1.25rem;
+}
+input[type=checkbox]{
+    height: 16px;
+    width: 16px;
+    cursor: pointer; 
+    margin-right: 5px;
+    vertical-align: -1px;   
+}

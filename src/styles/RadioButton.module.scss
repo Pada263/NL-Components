@@ -1,0 +1,36 @@
+.RadioButtonContainer{
+    font-size: 23px;  
+    margin: 0;    
+}
+/*
+input{
+    height: 23px;
+    width: 23px;
+    margin-right: 5px;
+    vertical-align: -3px;
+    cursor: pointer;
+    border: 5px solid gray;
+}*/
+
+input[type="radio"] {
+    /* remove standard background appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* create custom radiobutton appearance */
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  padding: 4px;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 2px solid #bbbbbb;
+  background-color: #ffffff;
+  border-radius: 50%;
+  outline: none;
+  vertical-align: -3px;
+}
+  input[type="radio"]:checked{
+    background-color: #107bb9;
+    
+  }

@@ -1,0 +1,29 @@
+$btnBorderColor:  #81bdfa;
+.btn{
+  margin: 8px;
+  height: 44px;
+  border: none;
+  display: flex;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  border-radius: 0%;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+.btn:disabled {
+  opacity: 0.2;
+}
+.btn:active{
+  border: 2px solid $btnBorderColor;
+}
+.btnYellow{
+  background-color: yellow;
+  color: black; 
+}
+.icon{
+  padding-left: 0px;
+ svg{
+  width: 44px; 
+  }
+}
