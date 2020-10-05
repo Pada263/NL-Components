@@ -9,17 +9,19 @@ interface DropdownProps{
 
 const Dropdown: React.FC<DropdownProps> = (props) => {
     
-    const [answersState, setAnswersState] = useState({
+    const [answersState] = useState({
         answers: [
-            {answer: 'Black'},
-            {answer: 'Red'},
-            {answer: 'Green'},
-            {answer: 'Blue'},
-        ]
+            {answer: 'Black' , value: "Black"},
+            {answer: 'Red', value: "Red"},
+            {answer: 'Green', value: "Green"},
+            {answer: 'Blue', value: "Blue"},
+        ],
+
+       
     });
 
     const handleChange = (event:any) =>{
-        console.log(event)
+      
     }
     
     let answers = null;
@@ -28,7 +30,7 @@ const Dropdown: React.FC<DropdownProps> = (props) => {
         <form >
             <label>
                 <div className={clsx(styles.styledSelect)}>
-                    <select onChange={handleChange}>
+                    <select /*value="Dropdown"*/ onChange={handleChange}>
                           <option selected disabled hidden>{props.label}</option>
                           {answersState.answers.map((answer) => {
                                 return <Option 
@@ -50,5 +52,3 @@ const Dropdown: React.FC<DropdownProps> = (props) => {
 }
 
 export default Dropdown
-
-
