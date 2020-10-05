@@ -28,13 +28,12 @@ const Dropdown: React.FC<DropdownProps> = (props) => {
         <form >
             <label>
                 <div className={clsx(styles.styledSelect)}>
-                    <select 
-                        onChange={handleChange}>
-                            {answersState.answers.map((answer) => {
+                    <select onChange={handleChange}>
+                          <option selected disabled hidden>{props.label}</option>
+                          {answersState.answers.map((answer) => {
                                 return <Option 
                                     answer = {answer.answer}
                                 >
-                                    {props.label}
                                 </Option>
                     })}  
                     </select>

@@ -34,7 +34,7 @@ function App() {
                 <RadioButton label="1" isChecked={true} name="test"/>
                 <RadioButton label="2" name="test"/>
 
-                <Dropdown label="Hier steht eine Frage"/>
+                <Dropdown label="Wählen sie eine Farbe aus"/>
                  
 
             </main>    
