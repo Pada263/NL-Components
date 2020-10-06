@@ -16,7 +16,7 @@ const Dropdown: React.FC<DropdownProps> = (props) => {
             {answer: 'Green', value: "Green"},
             {answer: 'Blue', value: "Blue"},
         ],
-
+       
        
     });
 
@@ -30,7 +30,7 @@ const Dropdown: React.FC<DropdownProps> = (props) => {
         <form >
             <label>
                 <div className={clsx(styles.styledSelect)}>
-                    <select /*value="Dropdown"*/ onChange={handleChange}>
+                    <select /*value={answersState.answers}*/ onChange={handleChange}>
                           <option selected disabled hidden>{props.label}</option>
                           {answersState.answers.map((answer) => {
                                 return <Option 
