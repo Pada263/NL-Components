@@ -24,16 +24,21 @@ const Dropdown: React.FC<DropdownProps> = (props) => {
       
     }
     
-    let answers = null;
-    
-    answers = (
-        <form >
+    const answers = (
+        
             <label>
                 <div className={clsx(styles.styledSelect)}>
-                    <select /*value={answersState.answers}*/ onChange={handleChange}>
-                          <option selected disabled hidden>{props.label}</option>
+                    <select 
+                        placeholder="test"
+                        value={undefined}
+                       // value={answersState.answers[0].value} 
+                        onChange={handleChange}>
+
+                          {//<option selected disabled hidden>{props.label}</option>
+                          }
                           {answersState.answers.map((answer) => {
                                 return <Option 
+                                    key = {answer.value}
                                     answer = {answer.answer}
                                 >
                                 </Option>
@@ -41,13 +46,13 @@ const Dropdown: React.FC<DropdownProps> = (props) => {
                     </select>
                 </div>
             </label>
-        </form>
+        
     )
 
     return (
-       <div>
+       
            {answers}
-       </div>
+       
     )
 }
 
