@@ -10,7 +10,7 @@ import {PencilFill} from 'react-bootstrap-icons';
 import {TrashFill} from 'react-bootstrap-icons';
 import RadioButton from '../components/RadioButton';
 import BtnTheme from '../components/BtnTest/BtnTheme'
-import ProgressBar from '../components/ProgressBar/ProgressBar';
+
 
 import LinearProgress from '../components/ProgressBar/LinearProgress';
 //import Dropdown from '../components/Dropdown/Dropdown';
@@ -42,11 +42,7 @@ function App() {
                  
                 <BtnTheme />
 
-                <ProgressBar 
-                    progress="95" 
-                    progressBgTheme="bg-light"
-                    progressBarColor="bg-primary"
-                />
+               
                
                 <LinearProgress />
             </main>    

@@ -11,7 +11,7 @@ const LinearProgress: React.FC<LinearProgressProps> = (props) => {
     
 
     return (
-        <div className={clsx(styles.lineBackground)}>
+        <div className={clsx(styles.linebackground)}>
           <div className={clsx(styles.linePreloader)}/>
         </div>
     )
