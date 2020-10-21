@@ -1,0 +1,17 @@
+//@import url("/src/index.scss"); 
+@import './src/index.scss';
+//@import "../../index.scss";
+
+
+.btnTheme{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    margin: 150px;
+    background-color: $container;
+    font-size: $fontsize;
+   
+}
+
+
+

@@ -1,18 +1,15 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+$body-bg: rgb(211, 211, 211);
+$body-color: rgb(255, 255, 255);
+$container: rgb(160, 68, 196);
+$fontsize: $font-size-base * 5;
 
+
+$theme-colors: (
+  "primary": #0074d9,
+  "danger": #fa0c00,
+  "custom": rgb(21, 252, 0)
+);
 
 @import "../node_modules/bootstrap/scss/bootstrap";
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 

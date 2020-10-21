@@ -1,0 +1,23 @@
+@import './src/index.scss';
+.linebg{
+    width: 400px;
+    height: 5px;
+    background: lighten($primary ,20%);
+
+}
+.linePreloader{
+    width: 400px;
+    height: 5px;
+    background: linear-gradient(to right, $primary, $primary);
+    border-radius: 4px; 
+    background-size: 20%;
+    background-repeat: repeat-y;
+    background-position: -25% 0;
+    animation: scroll 1.5s ease-in-out infinite; 
+}
+
+@keyframes scroll{
+    30%{background-size: 60%;}
+    100%{background-position: 125%;}
+}
+

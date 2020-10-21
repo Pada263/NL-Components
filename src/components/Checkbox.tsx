@@ -4,6 +4,7 @@ import styles from './../styles/Checkbox.module.scss'
 
 interface CheckboxProps{
     label: String;
+     
     
 }
 

@@ -1,8 +1,9 @@
+
 import React, { useState } from 'react'
 import Option from './Option'
 import clsx from 'clsx';
 import styles from './Dropdown.module.scss'
-
+/*
 interface DropdownProps{
     label: string;
 }
@@ -50,10 +51,8 @@ const Dropdown: React.FC<DropdownProps> = (props) => {
     )
 
     return (
-       
            {answers}
-       
     )
 }
 
-export default Dropdown
+export default Dropdown*/
