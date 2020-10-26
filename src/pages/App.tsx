@@ -44,7 +44,7 @@ function App() {
 
                
                
-                <LinearProgress />
+                <LinearProgress/>
             </main>    
         </div>  )
      }    

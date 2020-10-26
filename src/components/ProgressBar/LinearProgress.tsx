@@ -8,7 +8,7 @@ interface LinearProgressProps{
 
 const LinearProgress: React.FC<LinearProgressProps> = (props) => {
 
-    
+   
 
     return (
         <div className={clsx(styles.linebackground)}>
