@@ -1,18 +1,17 @@
 import React from 'react';
 import Button from '../components/Button'
-import { PersonFill } from 'react-bootstrap-icons';
-import {ChatDotsFill} from 'react-bootstrap-icons';
+import { PersonFill } from 'react-bootstrap-icons'
+import {ChatDotsFill} from 'react-bootstrap-icons'
 import LinkButton from '../components/LinkButton'
 import {SpecialButton} from '../components/SpecialButton';
 import Checkbox from '../components/Checkbox'
-import IconButton from '../components/IconButton';
-import {PencilFill} from 'react-bootstrap-icons';
-import {TrashFill} from 'react-bootstrap-icons';
-import RadioButton from '../components/RadioButton';
+import IconButton from '../components/IconButton'
+import {PencilFill} from 'react-bootstrap-icons'
+import {TrashFill} from 'react-bootstrap-icons'
+import RadioButton from '../components/RadioButton'
 import BtnTheme from '../components/BtnTest/BtnTheme'
-
-
-import LinearProgress from '../components/ProgressBar/LinearProgress';
+import ToggleSwitch from '../components/ToggleSwitch/ToggleSwitch'
+import LinearProgress from '../components/ProgressBar/LinearProgress'
 //import Dropdown from '../components/Dropdown/Dropdown';
 
 function App() {
@@ -45,6 +44,9 @@ function App() {
                
                
                 <LinearProgress/>
+
+                <ToggleSwitch/>
+
             </main>    
         </div>  )
      }    
