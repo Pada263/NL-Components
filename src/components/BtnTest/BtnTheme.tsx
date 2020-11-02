@@ -9,7 +9,7 @@ interface BtnThemeProps{
 const BtnTheme: React.FC<BtnThemeProps> = (props) => {
     return (
         <div className={clsx(styles.btnTheme)}>
-            <p>Hier Teste ich scss</p>
+           <h1>Ich bin ein Text<span>*</span></h1>
         </div>
     )
 }

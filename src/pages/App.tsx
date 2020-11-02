@@ -15,6 +15,7 @@ import LinearProgress from '../components/ProgressBar/LinearProgress'
 //import Dropdown from '../components/Dropdown/Dropdown';
 
 function App() {
+    console.log("test")
     return (
         <div>
            
@@ -39,8 +40,7 @@ function App() {
 
                 {/*<Dropdown label="Wählen sie eine Farbe aus"/> */}
                  
-                <BtnTheme />
-
+            
                
                
                 <LinearProgress/>

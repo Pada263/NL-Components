@@ -8,28 +8,21 @@ interface ToggleSwitchProps{
 const ToggleSwitch: React.FC<ToggleSwitchProps> = (props) => {
   
     const [isToggled, setToggled] = useState(false);
-    const toggleTrueFalse = () => setToggled(!isToggled);
+    const toggleTrueFalse = () => setToggled(prewiev=>!prewiev);
 
     let toggle = null;
     
-    if (isToggled) {
-       toggle =(
-            <span
-            onClick={toggleTrueFalse}
-       className={clsx(styles.on)}>On{console.log("on")}</span>
-        );
-    }if (!isToggled) {
-        toggle=(
-            <span
-            onClick={toggleTrueFalse}
-            className={clsx(styles.off)}>Off{console.log("off")}</span>);
-    }
-
+   
+    {console.log(isToggled)}
     return (
         <label className={clsx(styles.switch)}>
             <input type="checkbox" id="togBtn" />
             <div className={clsx(styles.slider)}>
-               {toggle}
+               {isToggled? <span
+            onClick={toggleTrueFalse}
+            className={clsx(styles.on)}>On </span> : <span
+            onClick={toggleTrueFalse}
+            className={clsx(styles.off)}>Off</span>}
             </div>
         </label>
     )
